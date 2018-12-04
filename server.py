@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 
 import click
-
-from immutablewebserver import runserver
+from immutablewebserver import app
 
 
 @click.command()
@@ -10,7 +9,7 @@ from immutablewebserver import runserver
 @click.option('--port', default=8080, help='which port to bind to.')
 @click.option('--debug', default=True, help='turn on debug mode')
 def run(host, port, debug):
-    runserver(host, port, debug)
+    app.run(host=host, port=port, debug=debug) 
 
 
 if __name__ == "__main__":

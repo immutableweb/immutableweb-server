@@ -2,4 +2,5 @@ cryptography
 ujson
 nose
 flask
+flask_testing
 -e git+https://github.com/immutableweb/immutableweb-core.git#egg=immutableweb
