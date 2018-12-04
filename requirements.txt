@@ -1,0 +1,5 @@
+cryptography
+ujson
+nose
+flask
+-e git+https://github.com/immutableweb/immutableweb-core.git#egg=immutableweb
